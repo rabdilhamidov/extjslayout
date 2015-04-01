@@ -120,7 +120,7 @@ input:-moz-placeholder {
 input:-ms-input-placeholder {
   text-overflow: ellipsis; }
 
-a.btn-xjs {
+a.btn-xjs, button.btn-xjs {
   background: #f0f0f0;
   /* Old browsers */
   /* FF3.6+ */
@@ -152,7 +152,7 @@ a.btn-xjs {
   font: 12px/14px tahoma, arial, verdana, sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  a.btn-xjs:hover {
+  a.btn-xjs:hover, button.btn-xjs:hover {
     background: #f0f0f0;
     /* Old browsers */
     /* FF3.6+ */
@@ -208,7 +208,7 @@ a.btn-xjs {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-1, endColorstr=$color-2,GradientType=0 );
   /* IE6-9 */ }
   .block-head-xjs h2 {
-    font: bold 13px/15px arial, tahoma, verdana, sans-serif;
+    font: bold 12px/14px arial, tahoma, verdana, sans-serif;
     margin: 0;
     padding-top: 6px;
     color: #333; }
@@ -229,7 +229,7 @@ a.btn-xjs {
         width: 10%;
         vertical-align: bottom;
         text-align: right; }
-        .block-body-xjs table td.buttons-xjs .controls-xjs a.btn-xjs {
+        .block-body-xjs table td.buttons-xjs .controls-xjs button.btn-xjs {
           margin-top: 6px; }
       .block-body-xjs table td.two-inputs label.second {
         margin-left: 2%;
