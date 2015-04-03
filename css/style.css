@@ -121,6 +121,7 @@ input:-ms-input-placeholder {
   text-overflow: ellipsis; }
 
 a.btn-xjs, button.btn-xjs {
+  position: relative;
   background: #f0f0f0;
   /* Old browsers */
   /* FF3.6+ */
@@ -136,7 +137,6 @@ a.btn-xjs, button.btn-xjs {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-1, endColorstr=$color-2,GradientType=0 );
   /* IE6-9 */
   border-radius: 3px;
-  padding: 2px;
   border: 1px solid #d0d0d0;
   outline: 0px none;
   cursor: pointer;
@@ -149,9 +149,17 @@ a.btn-xjs, button.btn-xjs {
   width: 70px;
   height: 22px;
   text-align: center;
-  font: 12px/14px tahoma, arial, verdana, sans-serif;
+  font: 12px/15px tahoma, arial, verdana, sans-serif;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  padding: 1px; }
+  a.btn-xjs span, button.btn-xjs span {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    display: inline-block; }
   a.btn-xjs:hover, button.btn-xjs:hover {
     background: #f0f0f0;
     /* Old browsers */
@@ -168,6 +176,32 @@ a.btn-xjs, button.btn-xjs {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-1, endColorstr=$color-2,GradientType=0 );
     /* IE6-9 */
     border-color: #9d9d9d; }
+  a.btn-xjs:active, button.btn-xjs:active {
+    background: #f0f0f0;
+    /* Old browsers */
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #c7c7c7), color-stop(100%, #e0e0e0));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #c7c7c7 0%, #e0e0e0 100%);
+    /* Chrome10+,Safari5.1+ */
+    /* Opera 11.10+ */
+    /* IE10+ */
+    background: -webkit-gradient(linear, left top, left bottom, from(#c7c7c7), to(#e0e0e0));
+    background: linear-gradient(to bottom, #c7c7c7 0%, #e0e0e0 100%);
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$color-1, endColorstr=$color-2,GradientType=0 );
+    /* IE6-9 */ }
+    a.btn-xjs:active span, button.btn-xjs:active span {
+      border: 1px dotted #343435; }
+
+.x-btn-over.x-btn-default-small {
+  border-color: #9d9d9d;
+  background-image: none;
+  background-color: #f3f3f3;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fbfbfb), color-stop(100%, #e9e9e9));
+  background-image: -webkit-linear-gradient(top, #fbfbfb, #e9e9e9);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#e9e9e9));
+  background-image: linear-gradient(top, #fbfbfb, #e9e9e9); }
 
 .icon {
   background-image: url('../images/sprite.png'); }
